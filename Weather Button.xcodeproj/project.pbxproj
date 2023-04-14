@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D6BE7B129E8628E008C63CF /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BE7B029E8628E008C63CF /* Shapes.swift */; };
+		3D6BE7B429E9D11B008C63CF /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 3D6BE7B329E9D11B008C63CF /* BottomSheet */; };
+		3D6BE7B629E9DD8E008C63CF /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BE7B529E9DD8E008C63CF /* ForecastView.swift */; };
 		3D8A68A329E5B47400B4F64A /* Weather_ButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A68A229E5B47400B4F64A /* Weather_ButtonApp.swift */; };
 		3D8A68A529E5B47400B4F64A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8A68A429E5B47400B4F64A /* ContentView.swift */; };
 		3D8A68A729E5B47800B4F64A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A68A629E5B47800B4F64A /* Assets.xcassets */; };
@@ -19,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3D6BE7B029E8628E008C63CF /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		3D6BE7B529E9DD8E008C63CF /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		3D8A689F29E5B47400B4F64A /* Weather Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Button.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8A68A229E5B47400B4F64A /* Weather_ButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_ButtonApp.swift; sourceTree = "<group>"; };
 		3D8A68A429E5B47400B4F64A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6BE7B429E9D11B008C63CF /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 		3D8A68B529E5C4EB00B4F64A /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				3D6BE7B529E9DD8E008C63CF /* ForecastView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -151,6 +156,9 @@
 			dependencies = (
 			);
 			name = "Weather Button";
+			packageProductDependencies = (
+				3D6BE7B329E9D11B008C63CF /* BottomSheet */,
+			);
 			productName = "Weather Button";
 			productReference = 3D8A689F29E5B47400B4F64A /* Weather Button.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 3D8A689629E5B47400B4F64A;
+			packageReferences = (
+				3D6BE7B229E9D11B008C63CF /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 3D8A68A029E5B47400B4F64A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +220,7 @@
 				3D8A68BA29E5DEC000B4F64A /* HomeView.swift in Sources */,
 				3D8A68A329E5B47400B4F64A /* Weather_ButtonApp.swift in Sources */,
 				3D8A68B829E5DCD300B4F64A /* Extentions.swift in Sources */,
+				3D6BE7B629E9DD8E008C63CF /* ForecastView.swift in Sources */,
 				3D8A68BC29E740F700B4F64A /* TabBar.swift in Sources */,
 				3D6BE7B129E8628E008C63CF /* Shapes.swift in Sources */,
 			);
@@ -413,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D6BE7B229E9D11B008C63CF /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D6BE7B329E9D11B008C63CF /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D6BE7B229E9D11B008C63CF /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D8A689729E5B47400B4F64A /* Project object */;
 }
