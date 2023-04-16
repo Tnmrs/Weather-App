@@ -58,7 +58,10 @@ struct HomeView: View {
             }
 
             // MARK: Tab Bar
-            TabBar(action: {})
+            TabBar(action: {
+                bottomSheetPosition = .top
+                   
+            })
         }
         .navigationBarHidden(true)
           

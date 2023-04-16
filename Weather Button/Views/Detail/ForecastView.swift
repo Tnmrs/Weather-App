@@ -12,6 +12,7 @@ struct ForecastView: View {
         ScrollView {
             
         }
+        .backgroundBlur(radius: 25, opaque: true)
         .background(Color.bottomSheetBackground)
         .clipShape(RoundedRectangle(cornerRadius: 44))
         .overlay {
@@ -23,6 +24,9 @@ struct ForecastView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 44))
         }
         .overlay(
+            
+            // MARK: Drag indicator
+            
             RoundedRectangle(cornerRadius: 10)
                 .fill(.black.opacity(0.3))
                 .frame(width: 48, height: 5 )
