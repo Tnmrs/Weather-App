@@ -22,7 +22,7 @@ struct ForecastView: View {
                 .background(Color.bottomSheetBorderTop)
                 .frame(maxHeight: .infinity, alignment: .top)
                 .clipShape(RoundedRectangle(cornerRadius: 44))
-        }
+                .innerShadow(shape: RoundedRectangle(cornerRadius: 44), color: Color.bottomSheetBorderMiddle, lineWidht: 1, offsetX: 0, offsetY: 1, blur: 0, blendMode: .overlay, opacity: 1)
         .overlay(
             
             // MARK: Drag indicator
