@@ -28,7 +28,7 @@ struct TabBar: View {
             Button {
                 action()
             } label: {
-                Image(systemName: "plus.circle")
+                Image(systemName: "location.square")
                     .frame(width: 44, height: 44)
             }
             
@@ -37,7 +37,7 @@ struct TabBar: View {
             NavigationLink {
                
             } label: {
-                Image(systemName: "list.star")
+                Image(systemName: "line.3.horizontal.circle")
                     .frame(width: 44, height: 44)
             }
 
