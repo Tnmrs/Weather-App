@@ -35,6 +35,7 @@ struct TabBar: View {
             Spacer()
             // MARK: Navigation Button
             NavigationLink {
+            WeatherView()
                
             } label: {
                 Image(systemName: "line.3.horizontal.circle")
