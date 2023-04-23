@@ -13,6 +13,15 @@ struct WeatherView: View {
             // MARK: Background
             Color.background
                 .ignoresSafeArea()
+            
+            // MARK: Weather Widgest
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 20) {
+                    ForEach(Forecast.cities) { forecast in
+                        WeatherWidget(forecast: forecast)
+                    }
+                }
+            }
         }
         .overlay {
             // MARK: Navigation Bar
