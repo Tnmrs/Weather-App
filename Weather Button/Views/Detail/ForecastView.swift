@@ -36,6 +36,11 @@ struct ForecastView: View {
                     
                 }
                 .padding(.horizontal, 20)
+                
+                // MARK: Forecast Widgest
+                
+                Image("Forecast Widgets")
+                    .opacity(bottomSheetTranslationProrated)
             }
             
         }
