@@ -22,6 +22,11 @@ struct WeatherView: View {
                     }
                 }
             }
+            
+            .safeAreaInset(edge: .top) {
+                EmptyView()
+                    .frame(height: 110)
+            }
         }
         .overlay {
             // MARK: Navigation Bar
